@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GST Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+  <div class="container">
+    <div class="particles" id="particles"></div>
+    <div class="gradient"></div>
+    <div class="gradient"></div>
+    <div class="parent">
+      <nav>
+    
+       <h1 class="animated-title">
+        <img src="logo.jpg" class="logo" alt="Qvesys Logo">
+    <span class="letter"><b>Q</b></span>
+    <span class="letter"><b>v</b></span>
+    <span class="letter"><b>e</b></span>
+    <span class="letter"><b>s</b></span>
+    <span class="letter"><b>y</b></span>
+    <span class="letter"><b>s</b></span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter"><b>T</b></span>
+    <span class="letter"><b>a</b></span>
+    <span class="letter"><b>x</b></span>
+    <span class="letter"><b>S</b></span>
+    <span class="letter"><b>m</b></span>
+    <span class="letter"><b>a</b></span>
+    <span class="letter"><b>r</b></span>
+    <span class="letter" ><b>t</b></span>
+  </h1>
+
+        </nav>
+      <div class="main_content" >
+        <div class="left">
+
+
+          <div class="calculator-container">
+            <div class="calculator">
+              <div class="input-group">
+                <label for="amount">Amount (₹)</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+              </div>
+
+              <div class="input-group">
+                <label for="gst-rate">GST Rate (%)</label>
+                <div class="rate-options">
+                  <button class="rate-btn" data-rate="5">5%</button>
+                  <button class="rate-btn" data-rate="10">10%</button>
+                  <button class="rate-btn" data-rate="12">12%</button>
+                  <button class="rate-btn" data-rate="18">18%</button>
+                  <button class="rate-btn" data-rate="28">28%</button>
+                  <input type="number" id="gst-rate" placeholder="Custom rate">
+                </div>
+              </div>
+
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="gst-type" value="exclusive" checked>
+                  <span>Amount Excludes GST</span>
+                </label>
+                <label>
+                  <input type="radio" name="gst-type" value="inclusive">
+                  <span>Amount Includes GST</span>
+                </label>
+              </div>
+
+              <button id="calculate-btn">
+                <i class="fas fa-calculator"></i> Calculate GST
+              </button>
+
+              <div class="results">
+                <div class="result-item">
+                  <span> Original Amount:</span>
+                  <span id="original-amount">₹0.00</span>
+                </div>
+                <div class="result-item">
+                  <span>GST Amount:</span>
+                  <span id="gst-amount">₹0.00</span>
+                </div>
+                <div class="result-item total">
+                  <span>Total Amount:</span>
+                  <span id="total-amount">₹0.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+  <div class="right-content">
+    <!-- GST Calculator Info -->
+    <p class="gst-info" >
+      <span class="highlight"><b>GST </b></span>
+      <span class="aqua-text"><b>Calculator:</b></span>
+      <span class="gradient-text"></span> Need help calculating GST while invoicing your clients? Use our easy GST calculator to quickly find out how much to charge. Just enter the amount, GST rate, and choose if it includes or excludes GST.
+    </p>
+    
+
+      
+      <!-- Scroll Down Button -->
+      <div class="scroll-button" id="scrollDown">
+
+        
+      </div>
+
+      <!-- Scroll Up Button -->
+      <div class="scroll-button" id="scrollUp">
+
+        
+
+      </div>
+    </div><br><br>
+    <!-- Professional Bio Card -->
+    <div class="bio-card">
+      <div class="bio-header">
+ 
+        <div class="bio-titles">
+          <p class="footer-credit">
+    Developed <span class="symbol"></span> by <span class="footer-name">Mumtaj Anwar</span>
+
+    </p>
+
+    <a href="https://mumtajanwar.github.io/Portfolio/" target="_blank" class="portfolio-link">
+      <span class="link-icon">🌐</span> Visit My Portfolio
+    </a>
+        </div>
+      </div>
+      
+      <div class="bio-details">
+        <p class="bio-description">
+          Passionate web developer specializing in creating responsive, user-friendly interfaces with modern technologies.
+        </p>
+        
+        
+        
+        <div class="contact-links">
+          <a href="tel:+919629646003" class="contact-link">
+  <i class="fas fa-phone"></i> Call
+</a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/yourusername" target="_blank" class="contact-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+ </body>
+
+</html>
